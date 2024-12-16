@@ -1,0 +1,28 @@
+Please add product images to this directory with the following names:
+
+phone.jpg
+laptop.jpg
+headphones.jpg
+smartwatch.jpg
+tshirt.jpg
+jeans.jpg
+sneakers.jpg
+jacket.jpg
+novel.jpg
+cookbook.jpg
+selfhelp.jpg
+history.jpg
+lamp.jpg
+pot.jpg
+pillow.jpg
+clock.jpg
+yoga.jpg
+dumbbells.jpg
+basketball.jpg
+racket.jpg
+lego.jpg
+boardgame.jpg
+rccar.jpg
+puzzle.jpg
+
+You can use placeholder images from services like placeholder.com or download appropriate product images.

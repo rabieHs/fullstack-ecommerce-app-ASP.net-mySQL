@@ -1,0 +1,128 @@
+@model IEnumerable<ECommerceMySQL.Web.Models.CartItem>
+
+@{
+    ViewData["Title"] = "Shopping Cart";
+    decimal total = Model.Sum(item => item.Product.Price * item.Quantity);
+}
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col">
+            <h1 class="mb-4">Shopping Cart</h1>
+            @Html.AntiForgeryToken()
+
+            @if (TempData["Success"] != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    @TempData["Success"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            @if (TempData["Error"] != null)
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    @TempData["Error"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            @if (!Model.Any())
+            {
+                <div class="card shadow-sm">
+                    <div class="card-body text-center py-5">
+                        <i class="bi bi-cart-x text-muted mb-3" style="font-size: 3rem;"></i>
+                        <h3 class="text-muted mb-4">Your cart is empty</h3>
+                        <a asp-controller="Products" asp-action="Index" class="btn btn-primary">
+                            Continue Shopping
+                        </a>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle">
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th class="text-center">Price</th>
+                                        <th class="text-center">Quantity</th>
+                                        <th class="text-end">Subtotal</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="@item.Product.ImageUrl" alt="@item.Product.Name" 
+                                                         class="rounded me-3" style="width: 64px; height: 64px; object-fit: cover;">
+                                                    <div>
+                                                        <h6 class="mb-0">@item.Product.Name</h6>
+                                                        <small class="text-muted">@item.Product.Category?.Name</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">$@item.Product.Price.ToString("F2")</td>
+                                            <td class="text-center" style="width: 200px;">
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <div class="input-group" style="width: 120px;">
+                                                        <button type="button" class="btn btn-outline-secondary btn-quantity" data-action="decrease" data-cart-id="@item.Id">
+                                                            <i class="bi bi-dash"></i>
+                                                        </button>
+                                                        <input type="text" class="form-control text-center quantity-input" value="@item.Quantity" data-cart-id="@item.Id" readonly>
+                                                        <button type="button" class="btn btn-outline-secondary btn-quantity" data-action="increase" data-cart-id="@item.Id">
+                                                            <i class="bi bi-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-end">$@((item.Product.Price * item.Quantity).ToString("F2"))</td>
+                                            <td class="text-end">
+                                                <form asp-action="RemoveFromCart" method="post" style="display: inline;">
+                                                    @Html.AntiForgeryToken()
+                                                    <input type="hidden" name="id" value="@item.Id" />
+                                                    <button type="submit" class="btn btn-outline-danger btn-sm">
+                                                        <i class="bi bi-trash"></i>
+                                                    </button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a asp-controller="Products" asp-action="Index" class="btn btn-outline-primary">
+                                    <i class="bi bi-arrow-left me-2"></i>Continue Shopping
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-end">
+                                    <div class="mb-3">
+                                        <span class="h5 me-2">Total:</span>
+                                        <span class="h3 text-primary">$@total.ToString("F2")</span>
+                                    </div>
+                                    <a asp-controller="Checkout" asp-action="Index" class="btn btn-primary btn-lg">
+                                        Proceed to Checkout
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

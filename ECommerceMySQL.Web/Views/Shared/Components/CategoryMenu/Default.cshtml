@@ -1,0 +1,10 @@
+@model IEnumerable<ECommerceMySQL.Web.Models.Category>
+
+@foreach (var category in Model)
+{
+    <li>
+        <a class="dropdown-item" asp-controller="Products" asp-action="Category" asp-route-id="@category.Id">
+            @category.Name
+        </a>
+    </li>
+}

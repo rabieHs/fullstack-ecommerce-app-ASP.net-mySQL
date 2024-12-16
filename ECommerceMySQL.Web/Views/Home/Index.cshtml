@@ -1,0 +1,137 @@
+@model IEnumerable<ECommerceMySQL.Web.Models.Product>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Carousel Section -->
+<div id="mainCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="~/images/banners/banner1.jpg" class="d-block w-100" alt="Special Offer" style="height: 400px; object-fit: cover;">
+            <div class="carousel-caption">
+                <h3>Special Offers</h3>
+                <p>Check out our latest deals!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/banners/banner2.jpg" class="d-block w-100" alt="New Arrivals" style="height: 400px; object-fit: cover;">
+            <div class="carousel-caption">
+                <h3>New Arrivals</h3>
+                <p>Discover our newest products!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/banners/banner3.jpg" class="d-block w-100" alt="Season Sale" style="height: 400px; object-fit: cover;">
+            <div class="carousel-caption">
+                <h3>Season Sale</h3>
+                <p>Up to 50% off on selected items!</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<!-- Categories Section -->
+<div class="container mb-4">
+    <h2 class="text-center mb-4">Shop by Category</h2>
+    <div class="row g-4 justify-content-center">
+        @foreach (var category in ViewBag.Categories)
+        {
+            <div class="col-6 col-md-4 col-lg-2">
+                <a href="@Url.Action("Index", "Products", new { categoryId = category.Id })" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            @{
+                                string iconClass = category.Name switch
+                                {
+                                    "Electronics" => "bi bi-laptop fs-1 mb-2 text-primary",
+                                    "Clothing" => "bi bi-bag fs-1 mb-2 text-success",
+                                    "Books" => "bi bi-book fs-1 mb-2 text-info",
+                                    "Home & Garden" => "bi bi-house fs-1 mb-2 text-danger",
+                                    "Sports" => "bi bi-trophy fs-1 mb-2 text-warning",
+                                    "Toys" => "bi bi-controller fs-1 mb-2 text-secondary",
+                                    _ => "bi bi-grid-3x3-gap-fill fs-1 mb-2"
+                                };
+                            }
+                            <i class="@iconClass"></i>
+                            <h5 class="card-title">@category.Name</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Featured Products Section -->
+<div class="container mb-4">
+    <h2 class="text-center mb-4">Featured Products</h2>
+    <div class="row g-4">
+        @foreach (var product in ViewBag.FeaturedProducts)
+        {
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="@product.ImageUrl" class="card-img-top" alt="@product.Name" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Name</h5>
+                        <p class="card-text text-muted">@product.Category.Name</p>
+                        <p class="card-text">$@product.Price.ToString("0.00")</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="@Url.Action("Details", "Products", new { id = product.Id })" class="btn btn-outline-primary">View Details</a>
+                            <button class="btn btn-primary add-to-cart" data-product-id="@product.Id">
+                                <i class="bi bi-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Recommended Products Section -->
+<div class="container mb-4">
+    <h2 class="text-center mb-4">Recommended For You</h2>
+    <div class="row flex-nowrap overflow-auto g-4 pb-2">
+        @foreach (var product in ViewBag.RecommendedProducts)
+        {
+            <div class="col-9 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="@product.ImageUrl" class="card-img-top" alt="@product.Name" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Name</h5>
+                        <p class="card-text text-muted">@product.Category.Name</p>
+                        <p class="card-text">$@product.Price.ToString("0.00")</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="@Url.Action("Details", "Products", new { id = product.Id })" class="btn btn-outline-primary">View Details</a>
+                            <button class="btn btn-primary add-to-cart" data-product-id="@product.Id">
+                                <i class="bi bi-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            $('.add-to-cart').click(function() {
+                var productId = $(this).data('product-id');
+                addToCart(productId, 1);
+            });
+        });
+    </script>
+}

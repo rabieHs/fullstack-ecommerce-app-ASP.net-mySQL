@@ -1,0 +1,107 @@
+@model ECommerceMySQL.Web.Models.Product
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<!-- Breadcrumb -->
+<div class="container mb-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Home</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Products", new { categoryId = Model.CategoryId })">@Model.Category.Name</a></li>
+            <li class="breadcrumb-item active">@Model.Name</li>
+        </ol>
+    </nav>
+</div>
+
+<!-- Product Details -->
+<div class="container mb-5">
+    <div class="row">
+        <!-- Product Image -->
+        <div class="col-md-6 mb-4">
+            <img src="@Model.ImageUrl" class="img-fluid rounded shadow" alt="@Model.Name">
+        </div>
+
+        <!-- Product Info -->
+        <div class="col-md-6">
+            <h1 class="mb-3">@Model.Name</h1>
+            <p class="text-muted mb-3">Category: @Model.Category.Name</p>
+            <h2 class="text-primary mb-4">$@Model.Price.ToString("0.00")</h2>
+            <p class="mb-4">@Model.Description</p>
+            
+            <!-- Add to Cart Form -->
+            <div class="mb-4">
+                <div class="input-group mb-3" style="max-width: 200px;">
+                    <button class="btn btn-outline-secondary" type="button" id="decreaseQuantity">-</button>
+                    <input type="number" class="form-control text-center" id="quantity" value="1" min="1">
+                    <button class="btn btn-outline-secondary" type="button" id="increaseQuantity">+</button>
+                </div>
+                <button class="btn btn-primary btn-lg w-100" id="addToCartBtn" data-product-id="@Model.Id">
+                    <i class="bi bi-cart-plus me-2"></i>Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Related Products -->
+@if (ViewBag.RelatedProducts != null && ViewBag.RelatedProducts.Count > 0)
+{
+    <div class="container mb-5">
+        <h2 class="mb-4">Related Products</h2>
+        <div class="row g-4">
+            @foreach (var relatedProduct in ViewBag.RelatedProducts)
+            {
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="@relatedProduct.ImageUrl" class="card-img-top" alt="@relatedProduct.Name" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">@relatedProduct.Name</h5>
+                            <p class="card-text text-muted">@relatedProduct.Category.Name</p>
+                            <p class="card-text">$@relatedProduct.Price.ToString("0.00")</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="@Url.Action("Details", "Products", new { id = relatedProduct.Id })" class="btn btn-outline-primary">View Details</a>
+                                <button class="btn btn-primary add-to-cart" data-product-id="@relatedProduct.Id">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Quantity controls
+            $('#decreaseQuantity').click(function() {
+                var quantity = parseInt($('#quantity').val());
+                if (quantity > 1) {
+                    $('#quantity').val(quantity - 1);
+                }
+            });
+
+            $('#increaseQuantity').click(function() {
+                var quantity = parseInt($('#quantity').val());
+                $('#quantity').val(quantity + 1);
+            });
+
+            // Add to cart
+            $('#addToCartBtn').click(function() {
+                var productId = $(this).data('product-id');
+                var quantity = parseInt($('#quantity').val());
+                addToCart(productId, quantity);
+            });
+
+            // Related products add to cart
+            $('.add-to-cart').click(function() {
+                var productId = $(this).data('product-id');
+                addToCart(productId, 1);
+            });
+        });
+    </script>
+}

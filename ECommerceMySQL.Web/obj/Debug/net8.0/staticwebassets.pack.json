@@ -1,0 +1,381 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/obj/Debug/net8.0/scopedcss/projectbundle/ECommerceMySQL.Web.bundle.scp.css",
+      "PackagePath": "staticwebassets/ECommerceMySQL.Web.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/banners/banner1.jpg",
+      "PackagePath": "staticwebassets/images/banners/banner1.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/banners/banner2.jpg",
+      "PackagePath": "staticwebassets/images/banners/banner2.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/banners/banner3.jpg",
+      "PackagePath": "staticwebassets/images/banners/banner3.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/basketball.jpg",
+      "PackagePath": "staticwebassets/images/products/basketball.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/boardgame.jpg",
+      "PackagePath": "staticwebassets/images/products/boardgame.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/clock.jpg",
+      "PackagePath": "staticwebassets/images/products/clock.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/cookbook.jpg",
+      "PackagePath": "staticwebassets/images/products/cookbook.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/dumbbells.jpg",
+      "PackagePath": "staticwebassets/images/products/dumbbells.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/headphones.jpg",
+      "PackagePath": "staticwebassets/images/products/headphones.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/history.jpg",
+      "PackagePath": "staticwebassets/images/products/history.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/jacket.jpg",
+      "PackagePath": "staticwebassets/images/products/jacket.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/jeans.jpg",
+      "PackagePath": "staticwebassets/images/products/jeans.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/lamp.jpg",
+      "PackagePath": "staticwebassets/images/products/lamp.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/laptop.jpg",
+      "PackagePath": "staticwebassets/images/products/laptop.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/lego.jpg",
+      "PackagePath": "staticwebassets/images/products/lego.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/novel.jpg",
+      "PackagePath": "staticwebassets/images/products/novel.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/phone.jpg",
+      "PackagePath": "staticwebassets/images/products/phone.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/pillow.jpg",
+      "PackagePath": "staticwebassets/images/products/pillow.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/placeholder.txt",
+      "PackagePath": "staticwebassets/images/products/placeholder.txt"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/pot.jpg",
+      "PackagePath": "staticwebassets/images/products/pot.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/puzzle.jpeg",
+      "PackagePath": "staticwebassets/images/products/puzzle.jpeg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/racket.jpg",
+      "PackagePath": "staticwebassets/images/products/racket.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/rccar.jpg",
+      "PackagePath": "staticwebassets/images/products/rccar.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/selfhelp.jpg",
+      "PackagePath": "staticwebassets/images/products/selfhelp.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/smartwatch.jpg",
+      "PackagePath": "staticwebassets/images/products/smartwatch.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/sneakers.jpg",
+      "PackagePath": "staticwebassets/images/products/sneakers.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/tshirt.jpg",
+      "PackagePath": "staticwebassets/images/products/tshirt.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/images/products/yoga.jpg",
+      "PackagePath": "staticwebassets/images/products/yoga.jpg"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/js/cart.js",
+      "PackagePath": "staticwebassets/js/cart.js"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/Apple/CascadeProjects/ECommerceMySQL/ECommerceMySQL.Web/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.ECommerceMySQL.Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.ECommerceMySQL.Web.props",
+      "PackagePath": "build\\ECommerceMySQL.Web.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.ECommerceMySQL.Web.props",
+      "PackagePath": "buildMultiTargeting\\ECommerceMySQL.Web.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.ECommerceMySQL.Web.props",
+      "PackagePath": "buildTransitive\\ECommerceMySQL.Web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,180 @@
+@model ECommerceMySQL.Web.Models.CheckoutModel
+
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title mb-4">Payment Information</h3>
+                    <form asp-action="ProcessPayment" method="post" id="paymentForm" class="needs-validation" novalidate>
+                        @Html.AntiForgeryToken()
+                        
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input asp-for="CardholderName" class="form-control" placeholder="John Doe" required />
+                                    <label asp-for="CardholderName"></label>
+                                    <span asp-validation-for="CardholderName" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input asp-for="CardNumber" class="form-control" placeholder="1234 5678 9012 3456" 
+                                           required pattern="\d{16}" maxlength="16" />
+                                    <label asp-for="CardNumber"></label>
+                                    <span asp-validation-for="CardNumber" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input asp-for="ExpirationDate" class="form-control" placeholder="MM/YY" 
+                                           required pattern="(0[1-9]|1[0-2])\/([0-9]{2})" maxlength="5" />
+                                    <label asp-for="ExpirationDate"></label>
+                                    <span asp-validation-for="ExpirationDate" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input asp-for="CVV" class="form-control" placeholder="123" 
+                                           required pattern="\d{3,4}" maxlength="4" />
+                                    <label asp-for="CVV"></label>
+                                    <span asp-validation-for="CVV" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input asp-for="Email" class="form-control" placeholder="you@example.com" required />
+                                    <label asp-for="Email"></label>
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input asp-for="BillingAddress" class="form-control" placeholder="1234 Main St" required />
+                                    <label asp-for="BillingAddress"></label>
+                                    <span asp-validation-for="BillingAddress" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input asp-for="City" class="form-control" placeholder="City" required />
+                                    <label asp-for="City"></label>
+                                    <span asp-validation-for="City" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-floating">
+                                    <input asp-for="State" class="form-control" placeholder="State" required />
+                                    <label asp-for="State"></label>
+                                    <span asp-validation-for="State" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-floating">
+                                    <input asp-for="ZipCode" class="form-control" placeholder="12345" required />
+                                    <label asp-for="ZipCode"></label>
+                                    <span asp-validation-for="ZipCode" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">
+                            Complete Purchase
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title mb-4">Order Summary</h3>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span>Subtotal</span>
+                        <strong>$@ViewBag.CartTotal.ToString("F2")</strong>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span>Shipping</span>
+                        <strong>Free</strong>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span>Total</span>
+                        <strong class="text-primary">$@ViewBag.CartTotal.ToString("F2")</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Format card number with spaces
+        document.getElementById('CardNumber').addEventListener('input', function (e) {
+            e.target.value = e.target.value.replace(/\D/g, '');
+        });
+
+        // Format expiration date
+        document.getElementById('ExpirationDate').addEventListener('input', function (e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length >= 2) {
+                value = value.slice(0, 2) + '/' + value.slice(2);
+            }
+            e.target.value = value;
+        });
+
+        // Validate expiration date
+        document.getElementById('ExpirationDate').addEventListener('blur', function (e) {
+            const value = e.target.value;
+            if (value.length === 5) {
+                const [month, year] = value.split('/');
+                const currentDate = new Date();
+                const currentYear = currentDate.getFullYear() % 100;
+                const currentMonth = currentDate.getMonth() + 1;
+
+                if (parseInt(year) < currentYear || 
+                    (parseInt(year) === currentYear && parseInt(month) < currentMonth)) {
+                    e.target.setCustomValidity('Card has expired');
+                } else {
+                    e.target.setCustomValidity('');
+                }
+            }
+        });
+
+        // Format CVV
+        document.getElementById('CVV').addEventListener('input', function (e) {
+            e.target.value = e.target.value.replace(/\D/g, '');
+        });
+
+        // Enable Bootstrap validation
+        (function () {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+}
